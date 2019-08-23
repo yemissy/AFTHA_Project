@@ -6,12 +6,6 @@ import Component1 from './Components/Component1/C1';
 import Component2 from './Components/Component2/C2';
 
 
-const TEST_URL = "https://catfact.ninja/fact";
-const HEADER = "Accept: application/json";
-
-
-
-
 class App extends Component {
     constructor(props) {
         super(props);
@@ -62,12 +56,12 @@ class App extends Component {
     getFacts = async() => {
         const header ='application/json';
         console.log(this.state.placeholder)
-        await axios.get(`${this.state.placeholder}`)
+        await axios.get(`https://cors-anywhere.herokuapp.com/${this.state.placeholder}`)
         .then(response => {
             console.log(response)
             let random_fact = response.data
             this.setState({
-                current_fact:random_fact
+                current_fact:random_fact.fact
             })
             console.log(this.state.current_fact)
         })
@@ -97,6 +91,7 @@ class App extends Component {
                         handleChange ={this.handleInputUpdate}
                         handleClick ={this.handleSendButton}
                         inputValue={this.state.editable_input.text}
+                        theFact={this.state.current_fact}
                     />
                 </header>
             </div>

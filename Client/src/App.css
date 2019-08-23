@@ -5,7 +5,6 @@
 .App-header {
   min-height: 100vh;
   text-align: center;
-  border: solid blue;
   background-image: linear-gradient(rgba(0,204,255,0.1), rgba(255,255,255,1));
 }
 

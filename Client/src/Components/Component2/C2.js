@@ -16,8 +16,8 @@ export default function Component2(props){
                 <Button secondary id="button2" onClick={props.handleClick}>Send</Button>
             </div>
             <div id="factsElement">
-                <h2>Facts of the Day</h2>
-                <h1> lorem lorem lorem lorem lorem </h1>
+                <h2>Fact of the Day</h2>
+                <h4>{props.theFact}</h4>
             </div>
         </div>
     )
