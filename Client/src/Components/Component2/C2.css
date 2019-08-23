@@ -1,0 +1,21 @@
+#comp2{
+    /* border: solid red; */
+    width: 45em;
+    height: 20em;
+    position: absolute;
+    /* top: 3em; */
+    left: 52em;
+}
+
+#button2{
+    width: 7em;
+}
+
+#factsElement{
+    border: solid black;
+    width: 40em;
+    height: 10em;
+    position: absolute;
+    /* top: 10em; */
+    left: 5em;
+}
