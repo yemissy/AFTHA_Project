@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import axios from "axios";
+import {Animated} from "react-animated-css";
 
 import Component1 from './Components/Component1/C1';
 import Component2 from './Components/Component2/C2';
@@ -79,9 +80,11 @@ class App extends Component {
         return(
             <div className = "App">
                 <header className="App-header">
-                    <p id="welcome">
-                        AFTHA PROJECT
-                    </p>
+                    <div className="welcomeDiv">
+                        <p id="welcome">
+                            AFTHA PROJECT
+                        </p>
+                    </div>
                     <Component1
                         placeholderValue={this.state.placeholder}
                         handleEditBtnClick={this.handleEditButton}

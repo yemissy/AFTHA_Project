@@ -1,10 +1,15 @@
+
+
 #comp2{
-    border: solid rgba(169, 169, 169, 1);
+    border: solid rgba(169, 169, 169, 0.19);
     width: 35em;
     height: 40em;
     position: absolute;
-    top: 5em;
+    top: 3em;
     left: 62em;
+    border-radius: 0.7em;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0em 0.9em 1.0em 1.0em rgba(169,169,169, 0.5);
 }
 
 #button2{
@@ -12,10 +17,10 @@
 }
 
 #factsElement{
-    border: solid black;
     width: 30em;
     height: 18em;
     position: absolute;
     top: 10em;
     left: 2.5em;
+    font-family: 'Dancing Script', cursive;
 }

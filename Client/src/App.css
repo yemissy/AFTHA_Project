@@ -8,6 +8,17 @@
   background-image: linear-gradient(rgba(0,204,255,0.1), rgba(255,255,255,1));
 }
 
+.welcomeDiv{
+    width: 80em;
+    height: 20em;
+    position: absolute;
+    /* left: 5em; */
+    top:10em;
+}
+
+#welcome{
+    font-size: 10em;
+}
 
 @keyframes App-logo-spin {
   from {
